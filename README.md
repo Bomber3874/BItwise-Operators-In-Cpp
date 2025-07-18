@@ -52,3 +52,48 @@ Bitwise operators perform operations directly on the binary representations of i
     Each right shift divides the number by 2 (for positive numbers).
 
     Example: 10 >> 1 → 1010 >> 1 = 0101 → Result: 5
+
+# Algorithm For Setting and Resetting Bits
+1. Initialize variables:
+
+    i = 50 (the initial number)
+
+    Declare bit_to_be_set, set, bit_to_be_reset, reset
+
+2.Input:
+
+    Prompt the user to enter the bit position they want to set (bit_to_be_set)
+
+    Read the value of bit_to_be_set from user input
+
+3.Set a bit:
+
+    Compute set = i | (1 << bit_to_be_set)
+
+        This shifts 1 left by bit_to_be_set positions to create a mask
+
+        Bitwise OR | with i sets the bit at the chosen position without changing other bits
+
+4.Input:
+
+    Prompt the user to enter the bit position they want to reset (bit_to_be_reset)
+
+    Read the value of bit_to_be_reset from user input
+
+5.Reset a bit:
+
+    Compute reset = i & (~(1 << bit_to_be_reset))
+
+        Shift 1 left by bit_to_be_reset to create a mask for that bit
+
+        Apply bitwise NOT ~ to flip the bits of the mask
+
+        Bitwise AND & with i clears (resets) the bit at the chosen position
+
+6.Output:
+
+    Print the value of set (number after setting the bit)
+
+    Print the value of reset (number after resetting the bit)
+
+7.End program
