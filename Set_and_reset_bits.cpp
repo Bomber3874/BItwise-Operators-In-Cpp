@@ -19,7 +19,7 @@ int main(){
     
     cout<<"Enter the bit position to be reset: ";
     cin>>bit_to_be_reset;
-    reset=i&(~(1<<bit_to_be_set));
+    reset=i&(~(1<<bit_to_be_reset));
     
     cout<<"Your number is: "<<set<<endl;
     cout<<"Your number is: "<<reset<<endl;
