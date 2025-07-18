@@ -1,4 +1,4 @@
-# BItwise-Operators-In-Cpp
+# Bitwise-Operators-In-Cpp
 
 # AIM - To understand and implement Bitwise operators in C++
 
